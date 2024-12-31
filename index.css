@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: rgb(28, 24, 24);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  header nav ul li a:hover {
+    color: #41b9f1;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1E88E5;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    padding: 12px 25px;
+    background-color: #FFEB3B;
+    color: #1E88E5;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .hero .btn:hover {
+    background-color: #FFCA28;
+  }
+  
+  /* Langkah-langkah */
+  .steps {
+    display: flex;
+    flex-wrap: wrap;  /* Membungkus elemen ke baris berikutnya jika diperlukan */
+    justify-content: space-between; /* Memberikan jarak yang merata antar elemen */
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .steps h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #2196F3;
+    width: 100%;  /* Memastikan judul langkah-langkah tetap berada di baris pertama */
+    text-align: center;
+  }
+  
+  .step {
+    flex: 1 1 22%;  /* Menyebar dan merata, 22% dari lebar kontainer */
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    text-align: center;
+    max-width: 300px;  /* Membatasi ukuran kotak untuk tampilan yang lebih konsisten */
+  }
+  
+  .step img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2196F3;
+  }
+  
+  .step p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);  /* Efek hover agar kotak sedikit terangkat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsif untuk perangkat lebih kecil (tablet ke bawah) */
+  @media screen and (max-width: 768px) {
+    .step {
+      flex: 1 1 45%; /* Membuat kotak step 45% dari lebar kontainer di tablet */
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .step {
+      flex: 1 1 90%; /* Membuat kotak step 90% dari lebar kontainer di ponsel */
+      max-width: 100%;
+    }
+  }
+  /* CTA Section */
+  .cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFEB3B;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+  
+  .cta h2 {
+    font-size: 2.2em;
+    color: #1E88E5;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .cta .btn {
+    padding: 12px 25px;
+    background-color: #1E88E5;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .cta .btn:hover {
+    background-color: #1565C0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .step {
+      width: 45%;
+      margin: 10px auto;
+    }
+  
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .steps h2 {
+      font-size: 1.8em;
+    }
+  
+    .hero .btn {
+      font-size: 1em;
+    }
+  
+    .cta h2 {
+      font-size: 1.8em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .cta .btn {
+      font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .step {
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p {
+      font-size: 1em;
+    }
+  
+    .steps h2 {
+      font-size: 1.6em;
+    }
+  
+    .cta h2 {
+      font-size: 1.5em;
+    }
+  
+    .cta p {
+      font-size: 1em;
+    }
+  
+    .cta .btn {
+      font-size: 1em;
+    }
+  }
